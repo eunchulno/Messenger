@@ -15,15 +15,12 @@ app.set('view engine', 'handlebars');
 app.get('/', function (req, res) {
     res.render('home');
 });
-
+MongoClient.connect(url.mongodb, function(err, db) {
+    assert.equal(null, err);
+    console.log("Connected correctly to server");
+    db.close();
+});
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
 });
 
-MongoClient.connect(url.mongodb, function(err, db) {
-    console.log(err);
-    //assert.equal(null, err);
-    console.log("Connected correctly to server");
-
-    db.close();
-});
