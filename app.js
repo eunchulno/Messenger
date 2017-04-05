@@ -3,8 +3,8 @@
  */
 var express = require('express');
 var exphbs  = require('express-handlebars');
-var MongoClient = require('mongodb').MongoClient;
-var assert = require('assert');
+var MongoClient = require('mongodb').MongoClient
+    , assert = require('assert');
 var url = require('./url');
 
 var app = express();
