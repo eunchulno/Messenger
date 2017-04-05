@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0b1d68a4-aa4a-482e-a29b-e74f7e660208" name="eunchulAWS" url="http://13.124.42.223">
+        <fileTransfer host="13.124.42.223" port="22" privateKey="C:\dev\key\eunchul.pem" rootFolder="/home/ubuntu/workspace" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
